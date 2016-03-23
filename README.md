@@ -1,6 +1,8 @@
 #CircleImageView[![Download](https://api.bintray.com/packages/haydar-android/maven/custom-seekbar/images/download.svg) ](https://bintray.com/haydar-android/maven/custom-seekbar/_latestVersion)
 
 CircleImageView 是一个简单的原型头像，不需要设置任何属性，直接拿来用
+
+
 ![](https://raw.githubusercontent.com/HayDar-Android/CircleImageView/master/a.png "CircleImageView")
 
 
