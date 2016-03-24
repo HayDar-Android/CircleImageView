@@ -4,7 +4,7 @@ ext {
     bintrayRepo = 'maven'
     bintrayName = 'circle-imageview'
 
-    publishedGroupId = 'io.haydar.csb'
+    publishedGroupId = 'io.haydar.civ'
     libraryName = 'circle-imageview'
     artifact = 'circle-imageview'
 
@@ -27,7 +27,7 @@ ext {
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.1"
-    resourcePrefix "custom-seekbar"
+    resourcePrefix "circle-imageview"
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion 23

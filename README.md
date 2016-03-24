@@ -1,4 +1,4 @@
-#CircleImageView[![Download](https://api.bintray.com/packages/haydar-android/maven/custom-seekbar/images/download.svg) ](https://bintray.com/haydar-android/maven/custom-seekbar/_latestVersion)
+#CircleImageView[![Download](https://api.bintray.com/packages/haydar-android/maven/circle-imageview/images/download.svg) ](https://bintray.com/haydar-android/maven/custom-seekbar/_latestVersion)
 
 CircleImageView 是一个简单的原型头像，不需要设置任何属性，直接拿来用
 
@@ -12,7 +12,7 @@ CircleImageView 是一个简单的原型头像，不需要设置任何属性，�
 
 ``` gradle
 dependencies {
-	compile 'io.haydar.csb:custom-seekbar:1.0'
+	compile 'io.haydar.civ:circle-imageview:1.0'
 }
 ```
 
