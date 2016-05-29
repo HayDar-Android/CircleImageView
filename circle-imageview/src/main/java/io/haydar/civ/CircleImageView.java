@@ -6,6 +6,7 @@ import android.graphics.BitmapShader;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Shader;
+import android.graphics.drawable.ColorDrawable;
 import android.util.AttributeSet;
 import android.widget.ImageView;
 
@@ -38,6 +39,9 @@ public class CircleImageView extends ImageView {
         mPaint.setStrokeWidth(0.0f);
     }
 
+    private int mwidth;
+    private int mheight;
+    private int length;
 
     @Override
     protected void onDraw(Canvas canvas) {
@@ -47,13 +51,23 @@ public class CircleImageView extends ImageView {
         if (getWidth() == 0 || getHeight() == 0) {
             return;     // nothing to draw (empty bounds)
         }
-        int length = Math.min(getDrawable().getIntrinsicWidth(), getDrawable().getIntrinsicHeight());
+
+
+        if (getDrawable() instanceof ColorDrawable) {
+            mwidth = getDrawable().getBounds().width();
+            mheight = getDrawable().getBounds().height();
+        } else {
+            mwidth = getDrawable().getIntrinsicWidth();
+            mheight = getDrawable().getIntrinsicHeight();
+        }
+
+        int length = Math.min(mwidth, mheight);
         mBitmap = Bitmap.createBitmap(
-                getDrawable().getIntrinsicWidth(),
-                getDrawable().getIntrinsicHeight(), Bitmap.Config.ARGB_8888);
+                mwidth,
+                mheight, Bitmap.Config.ARGB_8888);
         canvas1 = new Canvas(mBitmap);
         int width = Math.min(getWidth(), getHeight());
-        getDrawable().setBounds(0, 0, getDrawable().getIntrinsicWidth(), getDrawable().getIntrinsicHeight());
+        getDrawable().setBounds(0, 0, mwidth, mheight);
         float scaleWidth = width / (float) length;
         float scaleHeight = width / (float) length;
         canvas1.scale(scaleWidth, scaleHeight);
