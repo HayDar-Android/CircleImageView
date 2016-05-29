@@ -1,7 +1,8 @@
 #CircleImageView[![Download](https://api.bintray.com/packages/haydar-android/maven/circle-imageview/images/download.svg) ](https://bintray.com/haydar-android/maven/custom-seekbar/_latestVersion)
 
 CircleImageView 是一个简单的原型头像，不需要设置任何属性，直接拿来用
-
+##版本更新1.1
+	增加（修复）支持src为颜色
 
 ![](https://raw.githubusercontent.com/HayDar-Android/CircleImageView/master/a.png "CircleImageView")
 
@@ -12,7 +13,7 @@ CircleImageView 是一个简单的原型头像，不需要设置任何属性，�
 
 ``` gradle
 dependencies {
-	compile 'io.haydar.civ:circle-imageview:1.0'
+	compile 'io.haydar.civ:circle-imageview:1.1'
 }
 ```
 
