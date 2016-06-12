@@ -13,7 +13,7 @@ CircleImageView 是一个简单的原型头像，不需要设置任何属性，�
 
 ``` gradle
 dependencies {
-	compile 'io.haydar.civ:circle-imageview:1.1'
+	compile 'io.haydar.civ:circle-imageview:1.2'
 }
 ```
 
